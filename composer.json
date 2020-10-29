@@ -1,0 +1,42 @@
+{
+    "name": "pharaonic/laravel-short-url",
+    "description": "Laravel - Short URL Generator { URL, Route }.",
+    "keywords": [
+        "php",
+        "laravel",
+        "short url",
+        "pharaonic"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raggi",
+            "email": "support@pharaonic.io",
+            "homepage": "https://pharaonic.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": ">=8.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pharaonic\\Laravel\\ShortURL\\ShortURLServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Pharaonic\\Laravel\\ShortURL\\": "src"
+        },
+        "files": [
+            "src/Helper.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
