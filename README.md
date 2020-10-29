@@ -42,7 +42,7 @@ shortURL()->generate('https://pharaonic.io', '2027-07-07');
 shortURL()->generate('route.name.here', ['param' => 1]);
 
 // Generate from Route with Expiry date (string or Carbon object)
-shortURL()->generate('route.name.here', ['param' => 1]', '2027-07-07');
+shortURL()->generate('route.name.here', ['param' => 1], '2027-07-07');
 ```
 
 
