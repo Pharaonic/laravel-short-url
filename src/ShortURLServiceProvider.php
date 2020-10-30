@@ -15,7 +15,7 @@ class ShortURLServiceProvider extends ServiceProvider
     public function register()
     {
         // Config Merge
-        $this->mergeConfigFrom(__DIR__ . '/config/short-url.php', 'laravel-short-url');
+        $this->mergeConfigFrom(__DIR__ . '/config/short-url.php', ['pharaonic', 'laravel-short-url']);
 
         // Loads
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
@@ -32,7 +32,7 @@ class ShortURLServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/short-url.php'                   => config_path('Pharaonic/short-url.php'),
             __DIR__ . '/database/migrations/short-url.stub'     => database_path(sprintf('migrations/%s_create_short_urls_table.php',   date('Y_m_d_His', time() + 1)))
-        ], 'laravel-short-url');
+        ], ['pharaonic', 'laravel-short-url']);
 
         // Blade Directive
         Blade::directive('shortURL', function ($data = null) {
