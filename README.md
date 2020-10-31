@@ -1,13 +1,13 @@
 <p align="center"><a href="https://pharaonic.io" target="_blank"><img src="https://raw.githubusercontent.com/Pharaonic/logos/main/short-url.jpg" width="470"></a></p>
 
 <p align="center">
-<a href="https://packagist.org/packages/Pharaonic/laravel-short-url"><img src="https://poser.pugx.org/pharaonic/laravel-short-url/v/stable" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/Pharaonic/laravel-short-url"><img src="https://img.shields.io/packagist/dt/Pharaonic/laravel-short-url" alt="Total Downloads"></a> <a href="https://packagist.org/packages/Pharaonic/laravel-short-url"><img src="https://img.shields.io/packagist/l/Pharaonic/laravel-short-url" alt="License"></a>
+[![Source](http://img.shields.io/badge/source-pharaonic/laravel--short--url-blue.svg?style=flat-square)](https://github.com/Pharaonic/laravel-short-url) ![Packagist Version](https://img.shields.io/packagist/v/pharaonic/laravel-short-url?style=flat-square)
+[![Laravel](https://img.shields.io/badge/Laravel->=6.0-red.svg?style=flat-square)](https://laravel.com) ![Packagist Downloads](https://img.shields.io/packagist/dt/pharaonic/laravel-short-url?style=flat-square) [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
 </p>
 
 
 
 ## Install
-###### Laravel >= 8
 Install the latest version using [Composer](https://getcomposer.org/):
 
 ```bash
