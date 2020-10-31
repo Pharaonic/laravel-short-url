@@ -4,7 +4,6 @@ namespace Pharaonic\Laravel\ShortURL;
 
 use Carbon\Carbon;
 use Exception;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Route;
 
@@ -17,8 +16,6 @@ use Illuminate\Support\Facades\Route;
  */
 class ShortURL extends Model
 {
-    use HasFactory;
-
     /**
      * The table associated with the model.
      *
