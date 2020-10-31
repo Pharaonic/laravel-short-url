@@ -1,8 +1,8 @@
 <p align="center"><a href="https://pharaonic.io" target="_blank"><img src="https://raw.githubusercontent.com/Pharaonic/logos/main/short-url.jpg" width="470"></a></p>
 
 <p align="center">
-[![Source](http://img.shields.io/badge/source-pharaonic/laravel--short--url-blue.svg?style=flat-square)](https://github.com/Pharaonic/laravel-short-url) ![Packagist Version](https://img.shields.io/packagist/v/pharaonic/laravel-short-url?style=flat-square)
-[![Laravel](https://img.shields.io/badge/Laravel->=6.0-red.svg?style=flat-square)](https://laravel.com) ![Packagist Downloads](https://img.shields.io/packagist/dt/pharaonic/laravel-short-url?style=flat-square) [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
+<a href="https://github.com/Pharaonic/laravel-short-url" target="_blank"><img src="http://img.shields.io/badge/source-pharaonic/laravel--short--url-blue.svg?style=flat-square" alt="Source"></a> <a href="https://packagist.org/packages/pharaonic/laravel-short-url" target="_blank"><img src="https://img.shields.io/packagist/v/pharaonic/laravel-short-url?style=flat-square" alt="Packagist Version"></a><br>
+<a href="https://laravel.com" target="_blank"><img src="https://img.shields.io/badge/Laravel->=6.0-red.svg?style=flat-square" alt="Laravel"></a> <img src="https://img.shields.io/packagist/dt/pharaonic/laravel-short-url?style=flat-square" alt="Packagist Downloads"> <img src="http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Source">
 </p>
 
 
