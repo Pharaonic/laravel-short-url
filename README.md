@@ -83,10 +83,10 @@ array:7 [▼
 #### Get URL
 
 ```php
-echo shortURL('3dc0c3deda')->url;    //      http://127.0.0.1:8000/97b3b32933
+echo shortURL('3dc0c3deda')->url;     //      http://127.0.0.1:8000/97b3b32933
 
 // Blade
-@shortURL('3dc0c3deda')  				//      http://127.0.0.1:8000/97b3b32933
+@shortURL('3dc0c3deda')               //      http://127.0.0.1:8000/97b3b32933
 ```
 
 
@@ -96,7 +96,7 @@ echo shortURL('3dc0c3deda')->url;    //      http://127.0.0.1:8000/97b3b32933
 #### IF Expired
 
 ```php
-shortURL('3dc0c3deda')->expired		// false
+shortURL('3dc0c3deda')->expired       // false
 ```
 
 
@@ -106,7 +106,7 @@ shortURL('3dc0c3deda')->expired		// false
 #### Re-Generate
 
 ```php
-shortURL('3dc0c3deda')->regenerate()		// Returns ShortURL Object
+shortURL('3dc0c3deda')->regenerate()  // Returns ShortURL Object
 
 // RESULT
 Pharaonic\Laravel\ShortURL\ShortURL { ▼
