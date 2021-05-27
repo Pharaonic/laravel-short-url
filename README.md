@@ -1,4 +1,4 @@
-<p align="center"><a href="https://pharaonic.io" target="_blank"><img src="https://raw.githubusercontent.com/Pharaonic/logos/main/short-url.jpg" width="470"></a></p>
+<p align="center"><a href="https://pharaonic.io" target="_blank"><img src="https://raw.githubusercontent.com/Pharaonic/logos/main/short-url.jpg"></a></p>
 
 <p align="center">
 <a href="https://github.com/Pharaonic/laravel-short-url" target="_blank"><img src="http://img.shields.io/badge/source-pharaonic/laravel--short--url-blue.svg?style=flat-square" alt="Source"></a> <a href="https://packagist.org/packages/pharaonic/laravel-short-url" target="_blank"><img src="https://img.shields.io/packagist/v/pharaonic/laravel-short-url?style=flat-square" alt="Packagist Version"></a><br>
