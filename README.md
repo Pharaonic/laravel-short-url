@@ -1,130 +1,32 @@
 <p align="center"><a href="https://pharaonic.io" target="_blank"><img src="https://raw.githubusercontent.com/Pharaonic/logos/main/short-url.jpg"></a></p>
 
 <p align="center">
-<a href="https://github.com/Pharaonic/laravel-short-url" target="_blank"><img src="http://img.shields.io/badge/source-pharaonic/laravel--short--url-blue.svg?style=flat-square" alt="Source"></a> <a href="https://packagist.org/packages/pharaonic/laravel-short-url" target="_blank"><img src="https://img.shields.io/packagist/v/pharaonic/laravel-short-url?style=flat-square" alt="Packagist Version"></a><br>
-<a href="https://laravel.com" target="_blank"><img src="https://img.shields.io/badge/Laravel->=6.0-red.svg?style=flat-square" alt="Laravel"></a> <img src="https://img.shields.io/packagist/dt/pharaonic/laravel-short-url?style=flat-square" alt="Packagist Downloads"> <img src="http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Source">
+  <a href="https://php.net" target="_blank"><img src="https://img.shields.io/static/v1?label=PHP&message=%3E=7.2&color=blue&style=flat-square" alt="PHP Version : >= 7.2"></a>
+  <a href="https://laravel.com" target="_blank"><img src="https://img.shields.io/static/v1?label=Laravel&message=%3E=6.0&color=F05340&style=flat-square" alt="Laravel Version : >= 6.0"></a>
+  <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=brightgreen&style=flat-square" alt="License">
+  <a href="https://liberapay.com/Pharaonic" target="_blank"><img src="https://img.shields.io/liberapay/receives/Pharaonic?color=gold&label=Support&style=flat-square" alt="Support"></a>
+  <br>
+  <a href="https://packagist.org/packages/Pharaonic/laravel-short-url" target="_blank"><img src="https://img.shields.io/static/v1?label=Packagist&message=pharaonic/laravel-short-url&color=blue&logo=packagist&logoColor=white" alt="Source"></a>
+  <a href="https://packagist.org/packages/pharaonic/laravel-short-url" target="_blank"><img src="https://poser.pugx.org/pharaonic/laravel-short-url/v" alt="Packagist Version"></a>
+  <a href="https://packagist.org/packages/pharaonic/laravel-short-url" target="_blank"><img src="https://poser.pugx.org/pharaonic/laravel-short-url/downloads" alt="Packagist Downloads"></a>
 </p>
 
+<h3 align="center">Has-Files provides a quick and easy way to link images with a model.</h3>
+<br>
 
+## Documentation
 
-## Install
-Install the latest version using [Composer](https://getcomposer.org/):
+You can find the detailed documentation here in [Laravel Short-URL Documentation](https://pharaonic.io/package/2-laravel/12-short-url).
 
-```bash
-$ composer require pharaonic/laravel-short-url
-$ php artisan vendor:publish --tag=laravel-short-url
-$ php artisan migrate
-```
+## Contributing
 
+Thank you for considering contributing to this package! Be one of Pharaonic team.
 
-## Usage
-- [Generate (URL, Route)](#generate)
-- [Get URL](#read)
-- [IF Expired](#expired)
-- [Re-Generate Short URL](#regenerate)
+## Pharaonic Sponsors
 
-
-
-<a name="generate" id="generate"></a>
-
-#### Generate (URL, Route)
-
-```php
-// Generate from URL
-shortURL()->generate('https://pharaonic.io');
-
-// Generate from URL with Expiry date (string or Carbon object)
-shortURL()->generate('https://pharaonic.io', '2027-07-07');
-
-
-
-// Generate from Route
-shortURL()->generate('route.name.here', ['param' => 1]);
-
-// Generate from Route with Expiry date (string or Carbon object)
-$shortURL = shortURL()->generate('route.name.here', ['param' => 1], '2027-07-07');
-
-
-
-// RESULT AS OBJECT
-Pharaonic\Laravel\ShortURL\ShortURL { ▼
-  ...
-  #original: array:7 [▼
-    "code" => "97b3b32933"
-    "type" => "url"
-    "data" => "{"url":"https:\/\/pharaonic.io"}"
-    "expire_at" => "2027-07-07 00:00:00"
-    "user_id" => null
-    "updated_at" => "2020-10-31 07:07:00"
-    "created_at" => "2020-10-31 07:07:00"
-  ]
-  ...
-}
-
-
-// RESULT AS ARRAY
-array:7 [▼
-  "code" => "97b3b32933"
-  "type" => "url"
-  "data" => array:1 [▼
-    "url" => "https://pharaonic.io"
-  ]
-  "expire_at" => "2027-07-07T00:00:00.000000Z"
-  "user_id" => null
-  "updated_at" => "2020-10-31 07:07:00.000000Z"
-  "created_at" => "2020-10-31 07:07:00.000000Z"
-]
-```
-
-
-
-<a name="read" id="read"></a>
-
-#### Get URL
-
-```php
-echo shortURL('3dc0c3deda')->url;     //      http://127.0.0.1:8000/97b3b32933
-
-// Blade
-@shortURL('3dc0c3deda')               //      http://127.0.0.1:8000/97b3b32933
-```
-
-
-
-<a name="expired" id="expired"></a>
-
-#### IF Expired
-
-```php
-shortURL('3dc0c3deda')->expired       // false
-```
-
-
-
-<a name="regenerate" id="regenerate"></a>
-
-#### Re-Generate
-
-```php
-shortURL('3dc0c3deda')->regenerate()  // Returns ShortURL Object
-
-// RESULT
-Pharaonic\Laravel\ShortURL\ShortURL { ▼
-  ...
-  #original: array:7 [▼
-    "code" => "97b3b32933"
-    "type" => "url"
-    "data" => "{"url":"https:\/\/raggitech.com"}"
-    "expire_at" => "2027-07-07 00:00:00"
-    "user_id" => null
-    "updated_at" => "2020-10-31 07:07:00"
-    "created_at" => "2020-10-31 07:07:00"
-  ]
-  ...
-}
-```
-
+We would like to extend our thanks to the following sponsors for funding Pharaonic packages development. If you are interested in becoming a sponsor, please visit the Pharaonic [Liberapay page](https://en.liberapay.com/Pharaonic) or [Patreon page](https://patreon.com/Pharaonic).
 
 ## License
 
-[MIT LICENSE](LICENSE.md)
+This package is an open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
