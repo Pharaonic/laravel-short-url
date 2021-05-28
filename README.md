@@ -11,7 +11,7 @@
   <a href="https://packagist.org/packages/pharaonic/laravel-short-url" target="_blank"><img src="https://poser.pugx.org/pharaonic/laravel-short-url/downloads" alt="Packagist Downloads"></a>
 </p>
 
-<h3 align="center">Has-Files provides a quick and easy way to link images with a model.</h3>
+<h3 align="center">Short URL Generator { URL, Route }.</h3>
 <br>
 
 ## Documentation
