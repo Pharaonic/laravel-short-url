@@ -2,17 +2,17 @@
     "name": "pharaonic/laravel-short-url",
     "description": "Laravel - Short URL Generator { URL, Route }.",
     "keywords": [
-        "php",
-        "laravel",
+        "laravel short url",
+        "php short url",
         "short url",
-        "pharaonic"
+        "laravel",
+        "php"
     ],
     "license": "MIT",
     "authors": [
         {
-            "name": "Raggi",
-            "email": "support@pharaonic.io",
-            "homepage": "https://pharaonic.io"
+            "name": "Moamen Eltouny (Raggi)",
+            "email": "raggi@raggitech.com"
         }
     ],
     "require": {
