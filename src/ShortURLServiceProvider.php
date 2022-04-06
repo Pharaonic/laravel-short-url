@@ -31,7 +31,7 @@ class ShortURLServiceProvider extends ServiceProvider
         // Publishes
         $this->publishes([
             __DIR__ . '/config/short-url.php' => config_path('Pharaonic/short-url.php'),
-            __DIR__ . '/database/migrations/2021_02_01_000005_create_short_urls_table.php' => database_path('2021_02_01_000005_create_short_urls_table.php')
+            __DIR__ . '/database/migrations/2021_02_01_000005_create_short_urls_table.php' => database_path('migrations/2021_02_01_000005_create_short_urls_table.php')
         ], ['pharaonic', 'laravel-short-url']);
 
         // Blade Directive
